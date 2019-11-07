@@ -1,0 +1,12 @@
+<%= f = form_for @changeset, "#", [phx_submit: :save] %>
+  <%= label f, :id %>
+  <%= text_input f, :id %>
+
+  <%= submit "Save" %>
+</form>
+<button id="check">check</button>
+<div phx-hook="MusicHook" music_id="<%= @music_id %>" id="player"></div>
+
+
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+
